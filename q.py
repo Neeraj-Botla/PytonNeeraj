@@ -1,13 +1,21 @@
-
-'''customer = {name:"John",
-    card:"123456789",2
-    pin:"1234",
-    balance:5000}'''
-
+'''
+ customer=[{"name":"John",
+    "card":"565656577",
+    "pin":1234,
+    "balance":5000
+},
+{
+"name":"Cathy",
+    "card":"123346789",
+    "pin":1234,
+    "balance":5000
+}
+]
+'''
 
 print("*** HDFC ATM ***")
-
 balance=0
+
 while True:
     print("1. Deposit")
     print("2. Withdraw")
