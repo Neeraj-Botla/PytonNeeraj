@@ -56,8 +56,6 @@ while True:
 
     elif z =='y':
         pass
-
-        
             
             
         cardnum=int(input("Enter your card no : "))

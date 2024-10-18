@@ -17,7 +17,7 @@ while i<=5:
             print("corret")
             score +=1
         
-            j +=1
+           
             
 
             break
@@ -26,7 +26,7 @@ while i<=5:
         else:
             print("wrong ans")
             print(f"correct aneswer is {answer} ")
-            j +=1
+            
             break
     i=i+1   
 print(f"your total score is {score}/5")    
