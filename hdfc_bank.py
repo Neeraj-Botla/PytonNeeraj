@@ -33,7 +33,8 @@ while True:
                         print("2. Withdraw")
                         print("3. Balance")
                         print("4. fund transfer")
-                        print("5.Exit")
+                        print("5.loan")
+                        print("6.Exit")
                         choice = int(input("Enter your choice: "))
 
                         if choice==1:
@@ -68,12 +69,17 @@ while True:
                                 print(" your balance is ",customer[i]["balance"])
                             else:
                                 print("insufucient funds")
-                        elif choice == 5:  # Exit transaction menu
+                        elif choice == 6:  # Exit transaction menu
                                 print("Exiting.")
                                 break     
                         elif choice!=1 and choice!=2 and choice!=3 and choice!=4 and choice!=5 and choice!=6:
                 
                             print("Invalid Inpuy")
+                        elif choice==5:
+                            loanamt=int(input("enter amount you want to take : "))
+                            balance=balance+loanamt
+                            customer[i]["balance"]=balance
+                            
         
    
     else:
@@ -90,7 +96,9 @@ while True:
                     print("2. Withdraw")
                     print("3. Balance")
                     print("4. fund transfer")
-                    print("5.Exit")
+                    print("5.loan")
+                    print("6.Exit")
+                    
                     choice = int(input("Enter your choice: "))
                     if choice==1:
                         amount=int(input("Enter Amount: "))
@@ -126,9 +134,15 @@ while True:
                         else:
                             print("insufucient funds")
                     
-                    elif choice == 5:  # Exit transaction menu
+                    elif choice == 6:  # Exit transaction menu
                         print("Exiting.")
                         break
+                    
+
                     elif choice!=1 and choice!=2 and choice!=3 and choice!=4 and choice!=5 and choice!=6:
                         print("Invalid Input")
+                    elif choice==5:
+                        loanamt=int(input("enter amount you want to take : "))
+                        balance=balance+loanamt
+                        customer[i]["balance"]=balance
                    
